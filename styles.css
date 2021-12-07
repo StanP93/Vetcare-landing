@@ -1,18 +1,6 @@
 body {
   background-color: #FFF8F5;
 }
-.font-face-nunito {
-  font-family: 'Nunito', sans-serif;
-  src: url('../fonts/Nunito/static/Nunito-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-.font-face-quicksand {
-  font-family: 'Quicksand', sans-serif;
-  src: url('../fonts/Quicksand/static/Quicksand-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
 .buttons {
   background: linear-gradient(180deg, #FFA992 0%, #FF7852 65%);
   box-shadow: 0px 10px 25px rgba(255, 124, 84, 0.3);
@@ -26,4 +14,29 @@ body {
 }
 header {
   display: flex;
+  justify-content: space-between;
+  width: 78%;
+  margin: auto;
+  margin-top: 50px;
+}
+header button {
+  width: 228px;
+  height: 60px;
+}
+.nav-bar {
+  display: flex;
+  margin-top: 20px;
+}
+.nav-bar li {
+  margin-left: 55px;
+  text-transform: capitalize;
+  color: #242851;
+  font-family: 'Nunito', sans-serif;
+  src: url('../fonts/Nunito/static/Nunito-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.nav-bar li:first-child {
+  margin-left: 0;
 }

@@ -7,10 +7,12 @@ body {
   border-radius: 30px;
   border: none;
   color: #FFF;
-  font-family: 'Nunito', sans-serif;
-  src: url('../fonts/Nunito/static/Nunito-Regular.ttf') format('truetype');
-  font-weight: 400;
+  text-transform: capitalize;
+  font-family: 'Nunito';
   font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
 }
 header {
   display: flex;
@@ -23,20 +25,172 @@ header button {
   width: 228px;
   height: 60px;
 }
-.nav-bar {
+header .nav-bar {
   display: flex;
-  margin-top: 20px;
+  margin-top: 16px;
 }
-.nav-bar li {
+header .nav-bar li {
   margin-left: 55px;
   text-transform: capitalize;
   color: #242851;
-  font-family: 'Nunito', sans-serif;
-  src: url('../fonts/Nunito/static/Nunito-Regular.ttf') format('truetype');
-  font-weight: 400;
+  font-family: 'Nunito';
   font-style: normal;
+  font-weight: 600;
   font-size: 20px;
+  line-height: 27px;
 }
-.nav-bar li:first-child {
+header .nav-bar li:first-child {
   margin-left: 0;
+}
+.first-block {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 130px;
+  width: 90%;
+  position: relative;
+}
+.first-block p {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  padding-bottom: 60px;
+  color: #707283;
+}
+.first-block section {
+  width: 37%;
+}
+.first-block h1 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 120px;
+  color: #242851;
+  padding: 74px 0 30px 0;
+}
+.first-block button:first-of-type {
+  width: 188px;
+  height: 60px;
+}
+.first-block .green-button {
+  width: 246px;
+  height: 60px;
+  background: linear-gradient(180deg, #C3E48F 0%, #8EC637 65%);
+  box-shadow: 0px 10px 25px rgba(125, 181, 35, 0.3);
+  border-radius: 30px;
+  border: none;
+  color: #FFF;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+  margin-left: 20px;
+  margin-bottom: 73px;
+}
+.first-block img:first-of-type {
+  position: relative;
+}
+.first-block img {
+  position: absolute;
+}
+.first-block .ellipse {
+  position: absolute;
+  width: 37%;
+  height: 700px;
+  background: #FFCDB8;
+  filter: blur(200px);
+  top: 0px;
+  z-index: -1;
+  border-radius: 50%;
+}
+.second-block {
+  width: 78%;
+  background-color: #FFECE4;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+}
+.second-block section:first-of-type {
+  text-align: center;
+  display: block;
+  padding: 100px 0 60px 0;
+}
+.second-block section:first-of-type p {
+  color: #FF7751;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+}
+.second-block h2 {
+  color: #242851;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 87px;
+}
+.second-block h3 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 35px;
+  color: #242851;
+  margin-bottom: 20px;
+}
+.second-block section {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.second-block section div {
+  width: 20%;
+  background-color: #FFF;
+  border-radius: 30px;
+}
+.second-block section div p {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #707283;
+  margin: 0 40px 50px 40px;
+}
+.second-block .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  color: #FFF;
+}
+.second-block .circle .fas {
+  padding-top: 25px;
+}
+.second-block .first-circle {
+  background: linear-gradient(180deg, #B8DEFF 0%, #1D97FF 100%);
+  box-shadow: 0px 12px 25px rgba(72, 171, 255, 0.25);
+}
+.second-block .second-circle {
+  background: linear-gradient(180deg, #FFBBA9 0%, #FF6236 100%);
+  box-shadow: 0px 12px 25px rgba(255, 122, 85, 0.3);
+}
+.second-block .third-circle {
+  background: linear-gradient(180deg, #FFE4AA 0%, #FF9C07 100%);
+  box-shadow: 0px 12px 25px rgba(250, 168, 45, 0.3);
+}
+.second-block .fourth-circle {
+  background: linear-gradient(180deg, #AFE6EB 0%, #36BECB 100%);
+  box-shadow: 0px 12px 25px rgba(17, 199, 217, 0.3);
 }

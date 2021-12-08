@@ -29,10 +29,21 @@ body {
     color: @white-color;
     text-transform: capitalize;
     .font('Nunito', normal, 700, 20px, 27px);
+    height: 60px;
 }
 .background-grad(@color1,@color2, @r, @g, @b, @opacity) {
     background: linear-gradient(180deg, @color1 0%, @color2 100%);
     box-shadow: 0px 12px 25px rgba(@r, @g, @b, @opacity);
+}
+.ellipse() {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background: #FFCDB8;
+    filter: blur(200px);
+    top: 0px;
+    z-index: -1;
+    border-radius: 50%;
 }
 .buttons {
     .orange-buttons;
@@ -46,7 +57,6 @@ header {
     margin-top: 50px;
     & button {
         width: 228px;
-        height: 60px;
     }
     & .nav-bar {
         display: flex;
@@ -76,6 +86,7 @@ header {
     }
     & section {
         width: 37%;
+        position: relative;
     }
     & h1 {
         .font('Nunito', normal, 800, 80px, 120px);
@@ -84,7 +95,6 @@ header {
     }
     & button:first-of-type {
         width: 188px;
-        height: 60px;
     }
     & .green-button {
         width: 246px;
@@ -97,7 +107,7 @@ header {
         .font('Nunito', normal, 700, 20px, 27px);
         text-transform: capitalize;
         margin-left: 20px;
-        margin-bottom: 73px;
+        margin-bottom: 203px;
     }
     & img:first-of-type {
         position: relative;
@@ -106,14 +116,7 @@ header {
         position: absolute;
     }
     & .ellipse {
-        position: absolute;
-        width: 37%;
-        height: 700px;
-        background: #FFCDB8;
-        filter: blur(200px);
-        top: 0px;
-        z-index: -1;
-        border-radius: 50%;
+        .ellipse;
     }
 }
 .second-block {
@@ -183,4 +186,46 @@ header {
         .background-grad(#AFE6EB,#36BECB, 17, 199, 217, 0.3);
     }
 }
-
+.third-block {
+    width: 80%;
+    .margin-auto;
+    display: flex;
+    margin-top: 104px;
+    justify-content: space-evenly;
+    & p:first-of-type {
+        color:@orange-color;
+        .font('Nunito', normal, 800, 20px, 27px);
+        padding-top: 75px;
+    }
+    & p {
+        .font('Quicksand', normal, normal, 18px, 30px);
+        color: @gray-color;
+    }
+    & h2 {
+        color: @dark-blue-color;
+        .font('Nunito', normal, 800, 64px, 87px);
+        margin: 10px 0 30px 0;
+    }
+    & li {
+        .font('Nunito', normal, 600, 18px, 25px);
+        color: @dark-blue-color;
+        padding-top: 25px;
+        & i {
+            color: @orange-color;
+            margin-right: 10px;
+        }
+    }
+    & button {
+        width: 268px;
+        margin: 46px 0 49px 0;
+    }
+    & img:first-of-type {
+        position: relative;
+    }
+    & img {
+        position: absolute;
+    }
+    & .ellipse {
+        .ellipse;
+    }
+}

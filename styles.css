@@ -13,6 +13,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
+  height: 60px;
 }
 header {
   display: flex;
@@ -23,7 +24,6 @@ header {
 }
 header button {
   width: 228px;
-  height: 60px;
 }
 header .nav-bar {
   display: flex;
@@ -61,6 +61,7 @@ header .nav-bar li:first-child {
 }
 .first-block section {
   width: 37%;
+  position: relative;
 }
 .first-block h1 {
   font-family: 'Nunito';
@@ -73,7 +74,6 @@ header .nav-bar li:first-child {
 }
 .first-block button:first-of-type {
   width: 188px;
-  height: 60px;
 }
 .first-block .green-button {
   width: 246px;
@@ -90,7 +90,7 @@ header .nav-bar li:first-child {
   line-height: 27px;
   text-transform: capitalize;
   margin-left: 20px;
-  margin-bottom: 73px;
+  margin-bottom: 203px;
 }
 .first-block img:first-of-type {
   position: relative;
@@ -100,7 +100,7 @@ header .nav-bar li:first-child {
 }
 .first-block .ellipse {
   position: absolute;
-  width: 37%;
+  width: 100%;
   height: 700px;
   background: #FFCDB8;
   filter: blur(200px);
@@ -193,4 +193,70 @@ header .nav-bar li:first-child {
 .second-block .fourth-circle {
   background: linear-gradient(180deg, #AFE6EB 0%, #36BECB 100%);
   box-shadow: 0px 12px 25px rgba(17, 199, 217, 0.3);
+}
+.third-block {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-top: 104px;
+  justify-content: space-evenly;
+}
+.third-block p:first-of-type {
+  color: #FF7751;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  padding-top: 75px;
+}
+.third-block p {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #707283;
+}
+.third-block h2 {
+  color: #242851;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 87px;
+  margin: 10px 0 30px 0;
+}
+.third-block li {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #242851;
+  padding-top: 25px;
+}
+.third-block li i {
+  color: #FF7751;
+  margin-right: 10px;
+}
+.third-block button {
+  width: 268px;
+  margin: 46px 0 49px 0;
+}
+.third-block img:first-of-type {
+  position: relative;
+}
+.third-block img {
+  position: absolute;
+}
+.third-block .ellipse {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background: #FFCDB8;
+  filter: blur(200px);
+  top: 0px;
+  z-index: -1;
+  border-radius: 50%;
 }

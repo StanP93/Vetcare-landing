@@ -384,3 +384,66 @@ header {
         }
     }
 }
+footer {
+    width: 67%;
+    .margin-auto;
+    margin-top: 130px;
+    position: relative;
+    & p {
+        .font('Quicksand', normal, normal, 18px, 22px);
+        color: @gray-color;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    & section {
+        display: flex;
+        justify-content: space-between;
+        & p {
+            margin-top: 25px;
+            margin-bottom: 30px;
+            .font('Quicksand', normal, normal, 18px, 30px);
+            color: @gray-color;
+            text-align: left;
+        }
+        & h3 {
+            color: @dark-blue-color;
+            .font('Nunito', normal, 800, 28px, 38px);
+            margin-bottom: 25px;
+        }
+        & li {
+            .font('Quicksand', normal, normal, 18px, 22px);
+            color: @gray-color;
+            margin-bottom: 15px;
+        }
+        & div:first-of-type {
+            width: 32%;
+        }
+        // & div {
+        //     width: calc((1290px - 43%)/3);
+        // }
+        & form {
+            display: inline-block;
+            position: relative;
+            margin-bottom: 130px;
+            & input {
+                width: 394px;
+                height: 60px;
+                background: #FFFFFF;
+                box-shadow: 0px 12px 35px rgba(210, 197, 192, 0.25);
+                border-radius: 30px;
+                border: none;
+                .font('Quicksand', normal, normal, 18px, 22px);
+                color: @gray-color;
+                padding-left: 30px;
+            }
+            & .btn-footer {
+                position: absolute;
+                width: 143px;
+                height: 50px;
+                right: 0;
+                margin: 5px;
+            }
+        }
+        
+    }
+}

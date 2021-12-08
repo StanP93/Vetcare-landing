@@ -467,3 +467,82 @@ header .nav-bar li:first-child {
 .sixth-block section:last-of-type img {
   position: absolute;
 }
+footer {
+  width: 67%;
+  margin: auto;
+  margin-top: 130px;
+  position: relative;
+}
+footer p {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #707283;
+  text-align: center;
+  margin-bottom: 30px;
+}
+footer section {
+  display: flex;
+  justify-content: space-between;
+}
+footer section p {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #707283;
+  text-align: left;
+}
+footer section h3 {
+  color: #242851;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 25px;
+}
+footer section li {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #707283;
+  margin-bottom: 15px;
+}
+footer section div:first-of-type {
+  width: 32%;
+}
+footer section form {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 130px;
+}
+footer section form input {
+  width: 394px;
+  height: 60px;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 35px rgba(210, 197, 192, 0.25);
+  border-radius: 30px;
+  border: none;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #707283;
+  padding-left: 30px;
+}
+footer section form .btn-footer {
+  position: absolute;
+  width: 143px;
+  height: 50px;
+  right: 0;
+  margin: 5px;
+}

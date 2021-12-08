@@ -229,3 +229,64 @@ header {
         .ellipse;
     }
 }
+.fourth-block {
+    width: @wrapper;
+    background-color: @table-color;
+    .margin-auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    margin-top: 130px;
+    & section:first-of-type {
+        text-align: center;
+        display: block;
+        padding: 100px 0 60px 0;
+        & p {
+            color:@orange-color;
+            .font('Nunito', normal, 800, 20px, 27px);
+        }
+    }
+    & h2 {
+        color: @dark-blue-color;
+        .font('Nunito', normal, 800, 64px, 87px);
+    }
+    & h3 {
+        .font('Nunito', normal, 800, 24px, 33px);
+        color: @dark-blue-color;
+        margin: 30px 0 7px 0;
+    }
+    & section {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        padding-bottom: 100px;
+        & div {
+            width: 20%;
+            background-color: @white-color;
+            border-radius: 30px;
+            border-radius: 50%;
+            & p {
+                .font('Quicksand', normal, bold, 18px, 23px);
+                color: @orange-color;
+                margin: 0 40px 50px 40px;
+            }
+            & img {
+                border-radius: 96px;
+                margin-top: 50px;
+            }
+        }
+    }
+    & .first-circle {
+        .background-grad(#B8DEFF,#1D97FF, 72, 171, 255, 0.25);
+        
+    }
+    & .second-circle {
+        .background-grad(#FFBBA9,#FF6236, 255, 122, 85, 0.3);
+    }
+    & .third-circle {
+        .background-grad(#FFE4AA,#FF9C07, 250, 168, 45, 0.3);
+    }
+    & .fourth-circle {
+        .background-grad(#AFE6EB,#36BECB, 17, 199, 217, 0.3);
+    }
+}

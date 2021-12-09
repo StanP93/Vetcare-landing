@@ -15,12 +15,19 @@ body {
   line-height: 27px;
   height: 60px;
 }
+.buttons:hover {
+  cursor: pointer;
+}
+.buttons:active {
+  background: linear-gradient(180deg, #FFA992 0%, #FF7852 65%);
+  box-shadow: 10px 20px 35px rgba(255, 124, 84, 0.3);
+}
 header {
   display: flex;
   justify-content: space-between;
   width: 78%;
   margin: auto;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 header button {
   width: 228px;
@@ -38,6 +45,10 @@ header .nav-bar li {
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
+}
+header .nav-bar li a {
+  color: #242851;
+  text-decoration: none;
 }
 header .nav-bar li:first-child {
   margin-left: 0;
@@ -82,7 +93,7 @@ header .nav-bar li:first-child {
   width: 246px;
   height: 60px;
   background: linear-gradient(180deg, #C3E48F 0%, #8EC637 65%);
-  box-shadow: 0px 10px 25px rgba(125, 181, 35, 0.3);
+  box-shadow: 0px 20px 35px rgba(125, 181, 35, 0.3);
   border-radius: 30px;
   border: none;
   color: #FFF;
@@ -94,6 +105,13 @@ header .nav-bar li:first-child {
   text-transform: capitalize;
   margin-left: 20px;
   margin-bottom: 203px;
+}
+.first-block .green-button:hover {
+  cursor: pointer;
+}
+.first-block .green-button:active {
+  background: linear-gradient(180deg, #C3E48F 0%, #8EC637 65%);
+  box-shadow: 10px 10px 25px rgba(125, 181, 35, 0.3);
 }
 .first-block img {
   position: absolute;
@@ -107,6 +125,32 @@ header .nav-bar li:first-child {
   top: 0px;
   z-index: -1;
   border-radius: 50%;
+}
+.first-block #up {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #FFA992 0%, #FF7852 65%);
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+}
+.first-block #up:hover {
+  cursor: pointer;
+}
+.first-block #up:active {
+  background: linear-gradient(180deg, #FFA992 0%, #FF7852 65%);
+  box-shadow: 10px 20px 35px rgba(255, 124, 84, 0.3);
 }
 .second-block {
   width: 78%;
@@ -151,6 +195,66 @@ header .nav-bar li:first-child {
   justify-content: space-evenly;
   text-align: center;
   padding-bottom: 100px;
+}
+.second-block section #pet-grooming:hover {
+  background: linear-gradient(180deg, #B8DEFF 0%, #1D97FF 100%);
+  box-shadow: 0px 12px 25px rgba(72, 171, 255, 0.25);
+}
+.second-block section #pet-grooming:hover .first-circle {
+  background: linear-gradient(180deg, white 0%, white 100%);
+  box-shadow: 0px 12px 25px rgba(72, 171, 255, 0.25);
+  color: #1D97FF;
+}
+.second-block section #pet-grooming:hover h3 {
+  color: #FFF;
+}
+.second-block section #pet-grooming:hover p {
+  color: #FFF;
+}
+.second-block section #veterinary:hover {
+  background: linear-gradient(180deg, #FFBBA9 0%, #FF6236 100%);
+  box-shadow: 0px 12px 25px rgba(72, 171, 255, 0.25);
+}
+.second-block section #veterinary:hover .second-circle {
+  background: linear-gradient(180deg, white 0%, white 100%);
+  box-shadow: 0px 12px 25px rgba(72, 171, 255, 0.25);
+  color: #FF6236;
+}
+.second-block section #veterinary:hover h3 {
+  color: #FFF;
+}
+.second-block section #veterinary:hover p {
+  color: #FFF;
+}
+.second-block section #dog-setting:hover {
+  background: linear-gradient(180deg, #FFE4AA 0%, #FF9C07 100%);
+  box-shadow: 0px 12px 25px rgba(72, 171, 255, 0.25);
+}
+.second-block section #dog-setting:hover .third-circle {
+  background: linear-gradient(180deg, white 0%, white 100%);
+  box-shadow: 0px 12px 25px rgba(72, 171, 255, 0.25);
+  color: #FF9C07;
+}
+.second-block section #dog-setting:hover h3 {
+  color: #FFF;
+}
+.second-block section #dog-setting:hover p {
+  color: #FFF;
+}
+.second-block section #healthy-meals:hover {
+  background: linear-gradient(180deg, #AFE6EB 0%, #36BECB 100%);
+  box-shadow: 0px 12px 25px rgba(72, 171, 255, 0.25);
+}
+.second-block section #healthy-meals:hover .fourth-circle {
+  background: linear-gradient(180deg, white 0%, white 100%);
+  box-shadow: 0px 12px 25px rgba(72, 171, 255, 0.25);
+  color: #36BECB;
+}
+.second-block section #healthy-meals:hover h3 {
+  color: #FFF;
+}
+.second-block section #healthy-meals:hover p {
+  color: #FFF;
 }
 .second-block section div {
   width: 20%;
@@ -405,6 +509,28 @@ header .nav-bar li:first-child {
   width: 214px;
   margin-bottom: 60px;
 }
+.fifth-block section:hover {
+  background: linear-gradient(180deg, #FFA389 0%, #FF6439 100%);
+  box-shadow: 0px 15px 40px rgba(255, 103, 61, 0.3);
+}
+.fifth-block section:hover h2 {
+  color: #FFF;
+}
+.fifth-block section:hover h3 {
+  color: #FFF;
+}
+.fifth-block section:hover li {
+  color: #FFF;
+}
+.fifth-block section:hover button {
+  background: linear-gradient(180deg, white 0%, white 65%);
+  box-shadow: 0px 10px 25px rgba(255, 124, 84, 0.3);
+  color: #FF6439;
+}
+.fifth-block section:hover button:active {
+  background: linear-gradient(180deg, white 0%, white 65%);
+  box-shadow: 10px 20px 35px rgba(255, 255, 255, 0.3);
+}
 .fifth-block section:last-of-type {
   border-radius: 0 20px 20px 0;
 }
@@ -538,6 +664,7 @@ footer section form input {
   line-height: 22px;
   color: #707283;
   padding-left: 30px;
+  outline: none;
 }
 footer section form .btn-footer {
   position: absolute;

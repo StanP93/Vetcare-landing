@@ -21,6 +21,10 @@ body {
     font-size: @font-size;
     line-height: @line-height;
 }
+.background-grad(@color1,@color2, @r, @g, @b, @opacity) {
+    background: linear-gradient(180deg, @color1 0%, @color2 100%);
+    box-shadow: 0px 12px 25px rgba(@r, @g, @b, @opacity);
+}
 .orange-buttons() {
     background: linear-gradient(180deg, #FFA992 0%, #FF7852 65%);
     box-shadow: 0px 10px 25px rgba(255, 124, 84, 0.3);
@@ -30,10 +34,6 @@ body {
     text-transform: capitalize;
     .font('Nunito', normal, 700, 20px, 27px);
     height: 60px;
-}
-.background-grad(@color1,@color2, @r, @g, @b, @opacity) {
-    background: linear-gradient(180deg, @color1 0%, @color2 100%);
-    box-shadow: 0px 12px 25px rgba(@r, @g, @b, @opacity);
 }
 .ellipse() {
     position: absolute;
@@ -45,16 +45,27 @@ body {
     z-index: -1;
     border-radius: 50%;
 }
+.white-color(@tag) {
+    @{tag} {
+        color: @white-color;
+    }
+}
 .buttons {
     .orange-buttons;
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        background: linear-gradient(180deg, #FFA992 0%, #FF7852 65%);
+        box-shadow: 10px 20px 35px rgba(255, 124, 84, 0.3);
+    }
 }
-
 header {
     display: flex;
     justify-content: space-between;
     width: @wrapper;
     .margin-auto;
-    margin-top: 50px;
+    padding-top: 50px;
     & button {
         width: 228px;
     }
@@ -66,6 +77,10 @@ header {
             text-transform: capitalize;
             color: @dark-blue-color;
             .font('Nunito', normal, 600, 20px, 27px);
+            & a {
+                color: @dark-blue-color;
+                text-decoration: none;
+            }
         }
         & li:first-child {
             margin-left: 0;
@@ -103,7 +118,7 @@ header {
         width: 246px;
         height: 60px;
         background: linear-gradient(180deg, #C3E48F 0%, #8EC637 65%);
-        box-shadow: 0px 10px 25px rgba(125, 181, 35, 0.3);
+        box-shadow: 0px 20px 35px rgba(125, 181, 35, 0.3);
         border-radius: 30px;
         border: none;
         color: @white-color;
@@ -111,6 +126,13 @@ header {
         text-transform: capitalize;
         margin-left: 20px;
         margin-bottom: 203px;
+        &:hover {
+            cursor: pointer;
+        }
+        &:active {
+            background: linear-gradient(180deg, #C3E48F 0%, #8EC637 65%);
+            box-shadow: 10px 10px 25px rgba(125, 181, 35, 0.3);
+        }
     }
     & img {
         position: absolute;
@@ -118,7 +140,30 @@ header {
     & .ellipse {
         .ellipse;
     }
+    & #up {
+        display: none;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        color: white;
+        border-radius: 10px;
+        background: linear-gradient(180deg, #FFA992 0%, #FF7852 65%);
+        .font('Nunito', normal, 700, 20px, 27px);
+    }
+    & #up:hover {
+        cursor: pointer;
+    }
+    & #up:active {
+        background: linear-gradient(180deg, #FFA992 0%, #FF7852 65%);
+        box-shadow: 10px 20px 35px rgba(255, 124, 84, 0.3);
+    }
 }
+    
 .second-block {
     width: @wrapper;
     background-color: @table-color;
@@ -144,11 +189,64 @@ header {
         color: @dark-blue-color;
         margin-bottom: 20px;
     }
+    
     & section {
         display: flex;
         justify-content: space-evenly;
         text-align: center;
         padding-bottom: 100px;
+        & #pet-grooming:hover {
+            .background-grad(#B8DEFF,#1D97FF, 72, 171, 255, 0.25);
+                & .first-circle {
+                    .background-grad(white,white, 72, 171, 255, 0.25);
+                    color: #1D97FF;
+                }
+                & h3 {
+                    color:@white-color;
+                }
+                & p {
+                    color:@white-color;
+                }
+        }
+        & #veterinary:hover {
+            .background-grad(#FFBBA9,#FF6236, 72, 171, 255, 0.25);
+                & .second-circle {
+                    .background-grad(white,white, 72, 171, 255, 0.25);
+                    color: #FF6236;
+                }
+                & h3 {
+                    color:@white-color;
+                }
+                & p {
+                    color:@white-color;
+                }
+        }
+        & #dog-setting:hover {
+            .background-grad(#FFE4AA,#FF9C07, 72, 171, 255, 0.25);
+                & .third-circle {
+                    .background-grad(white,white, 72, 171, 255, 0.25);
+                    color: #FF9C07;
+                }
+                & h3 {
+                    color:@white-color;
+                }
+                & p {
+                    color:@white-color;
+                }
+        }
+        & #healthy-meals:hover {
+            .background-grad(#AFE6EB,#36BECB, 72, 171, 255, 0.25);
+                & .fourth-circle {
+                    .background-grad(white,white, 72, 171, 255, 0.25);
+                    color: #36BECB;
+                }
+                & h3 {
+                    color:@white-color;
+                }
+                & p {
+                    color:@white-color;
+                }
+        }
         & div {
             width: 20%;
             background-color: @white-color;
@@ -335,6 +433,22 @@ header {
             width: 214px;
             margin-bottom: 60px;
         }
+        &:hover {
+            background: linear-gradient(180deg, #FFA389 0%, #FF6439 100%);
+            box-shadow: 0px 15px 40px rgba(255, 103, 61, 0.3);
+            .white-color(h2);
+            .white-color(h3);
+            .white-color(li);
+            & button {
+                background: linear-gradient(180deg, white 0%, white 65%);
+                box-shadow: 0px 10px 25px rgba(255, 124, 84, 0.3);
+                color: #FF6439;
+            }
+            & button:active {
+                background: linear-gradient(180deg, white 0%, white 65%);
+                box-shadow: 10px 20px 35px rgba(255, 255, 255, 0.3);
+            }
+        }
     }
     & section:last-of-type {
         border-radius: 0 20px 20px 0;
@@ -435,6 +549,7 @@ footer {
                 .font('Quicksand', normal, normal, 18px, 22px);
                 color: @gray-color;
                 padding-left: 30px;
+                outline: none;
             }
             & .btn-footer {
                 position: absolute;

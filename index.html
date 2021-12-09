@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,15 +14,15 @@
     </style>
 </head>
 <body>
-    <header>
+    <header id="head">
         <img src="assets/images/Vetcare.svg" alt="no-image">
         <nav>
             <ul class="nav-bar">
-                <li>start</li>
-                <li>services</li>
-                <li>about</li>
-                <li>news</li>
-                <li>contact</li>
+                <li><a href="#head">start</a></li>
+                <li><a href="#second-block">services</a></li>
+                <li><a href="#third-block">about</a></li>
+                <li><a href="#sixth-block">news</a></li>
+                <li><a href="#foot">contact</a></li>
             </ul>
         </nav>
         <button class="buttons">
@@ -40,42 +40,42 @@
             </section>
             <section>
                 <img src="assets/images/Head-dog.png" alt="no-image">
-                
                 <div class="ellipse"></div>
             </section>
                 <img src="assets/images/element-1.svg" alt="no-image" style="top: 7%; left: 1%;">
                 <img src="assets/images/element-2.svg" alt="no-image" style="top: 40%;">
                 <img src="assets/images/element-3.svg" alt="no-image" style="right: 1%; bottom: 14%;">
                 <img src="assets/images/element-4.svg" alt="no-image" style="top: 0; right: 8%;">
+                <button id="up" onclick="topFunction()">UP</button>
         </article>
-        <article class="second-block">
+        <article class="second-block" id="second-block">
             <section>
                 <p>Care For Your Pet</p>
                 <h2>What We Do</h2>
             </section>
             <section>
-                <div>
+                <div id="pet-grooming">
                     <div class="circle first-circle">
                         <i class="fas fa-bone fa-3x"></i>
                     </div>
                     <h3>Pet Grooming</h3>
                     <p>There are many variatio of passage of Lorem for a Ipsum available</p>
                 </div>
-                <div>
+                <div id="veterinary">
                     <div class="circle second-circle">
                         <i class="fas fa-paw fa-3x"></i>
                     </div>
                     <h3>Veterinary</h3>
                     <p>There are many variatio of passage of Lorem for a Ipsum available</p>
                 </div>
-                <div>
+                <div id="dog-setting">
                     <div class="circle third-circle">
                         <i class="fas fa-dog fa-3x"></i>
                     </div>
                     <h3>Dog Setting</h3>
                     <p>There are many variatio of passage of Lorem for a Ipsum available</p>
                 </div>
-                <div>
+                <div id="healthy-meals">
                     <div class="circle fourth-circle">
                         <i class="fas fa-syringe fa-3x"></i>
                     </div>
@@ -84,7 +84,7 @@
                 </div>
             </section>
         </article>
-        <article class="third-block">
+        <article class="third-block" id="third-block">
             <section style="width: 40%;">
                 <p>Our Success Story</p>
                 <h2>Experience Vet Clinic
@@ -181,7 +181,7 @@
             <img src="assets/images/element-1.svg" alt="no-image" style="bottom: -5%; left: -10%;">
             <img src="assets/images/element-6.svg" alt="no-image" style="top: -5%; right: -10%;">
         </article>
-        <article class="sixth-block">
+        <article class="sixth-block" id="sixth-block">
             <section>
                 <h2>Professional Pet Care</h2>
                 <p>Pet owners trust us to look after the needs of their beloved companions. 
@@ -197,7 +197,7 @@
             </section>
         </article>
     </main>
-    <footer>
+    <footer id="foot">
         <section>
             <div>
                 <img src="assets/images/Vetcare - footer.svg" alt="no-image">
@@ -241,5 +241,6 @@
         <p>© Copyright 2021 - 2024 | Pet Theme by Md Shamim Hossain | All Rights Reserved</p>
         <img src="assets/images/element-1.svg" alt="no-image" style="position: absolute; right: -10%; bottom: 40%;">
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
